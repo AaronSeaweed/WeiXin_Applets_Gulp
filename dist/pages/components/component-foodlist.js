@@ -1,0 +1,1 @@
+"use strict";Component({properties:{propA:{type:String},propB:{type:Array},propC:{type:String}},data:{},methods:{showgoodslist:function(t){var r=t.currentTarget.dataset.op;wx.navigateTo({url:"../checkOrder/goodslist?op="+r})}},ready:function(){}});

@@ -1,0 +1,37 @@
+@import '../../app.less';
+.backgroundcolor(@color){
+    background-color:@color
+}
+.padding(bottom,@value){
+    padding-bottom:@value
+}
+.padding(@value){
+    padding:@value
+}
+page{.backgroundcolor(#f7f7f7)}
+.address,.goodimg,.orderinfo,.orderprice,.ordermake{.backgroundcolor(#fff)}
+.address,.goodimg,.orderinfo{margin-bottom:10rpx;}
+.ordermake{
+    height:220rpx;text-align: center;margin-bottom:10rpx;
+    view:first-of-type .makeimg{.boxsize(64rpx,64rpx);vertical-align: middle;margin-right:20rpx;}
+    view:last-of-type button{.boxsize(180rpx,60rpx);line-height: 60rpx;border-radius:0;.backgroundcolor(#fff);font-size:14px;margin-top:40rpx;}
+}
+.title{border:1px #f7f7f7 solid;height:60rpx;line-height:60rpx;.padding(10rpx);font-size:17px;}
+.address view:last-of-type{.padding(20rpx);font-size: 14px}
+.address view:last-of-type text:last-of-type{display: block;font-size: 12px}
+.ordernum{.padding(10rpx);border-bottom: 1px #f7f7f7 solid;font-size:14px}
+.orderdate{.padding(10rpx);font-size:14px}
+.orderprice{
+    .padding(bottom,60rpx);
+    view{
+        border-bottom:1px #f7f7f7 solid;height:60rpx;line-height:60rpx;.padding(10rpx);font-size:14px;
+        text{float: right}
+    }:last-of-type text{color:#a3158e;font-size:18px}
+}
+.goodimglist{.padding(bottom,5rpx);}
+.cancelorpay{
+    position: fixed;font-size: 14px;bottom:0;.boxsize(100%,60rpx);border-top:1px #f7f7f7 solid;
+    view{.boxsize(50%,100%);text-align: center;line-height: 60rpx}
+    .cancel{float: left;.backgroundcolor(#fff);}
+    .pay{color:#fff;.backgroundcolor(#a3158e);float: right}
+}

@@ -1,0 +1,21 @@
+<view>
+    <view class='deliveryInfo' bindtap='setaddress'>
+      <view hidden='{{hideadd}}' class='address'><text>{{userinfo.province}}  {{userinfo.city}}  {{userinfo.Area}}</text></view>
+      <view hidden='{{hideadd}}' class='dateiladdress'><text>{{userinfo.detailaddress}}{{userinfo.doorplate}}</text><image class="ordergoodlist" src='../../img/sel.png'></image></view>
+      <view hidden='{{hideadd}}' class='name_tel'><text>{{userinfo.username}} {{userinfo.Telphone}}</text></view>
+      <view class='seladdress'  hidden='{{!hideadd}}'>请选择收货地址<image class="ordergoodlist" src='../../img/sel.png'></image></view>
+    </view>
+    <good_list prop-a="{{goodsCount}}" prop-b="{{goodsimg}}"></good_list>
+    <view class='priceDetail'>
+        <view><text>商品总价</text><text>￥{{totalPrice}}</text></view>
+        <view><text>优惠券</text><text>无可用商品券</text><image src='../../img/sel.png'></image></view>
+        <view><text>红包</text><text>无可用红包</text><image src='../../img/sel.png'></image></view>
+        <view><text>商品实付</text><text>￥{{totalPrice}}</text></view>
+        <view><text>配送费</text><text>￥{{deliveryprice}}</text></view>
+        <view><text>合计： ￥{{grossPrice}}</text></view>
+    </view>
+    <view class='Gotopay'>
+      <view class="total_text">付款：<text>￥{{grossPrice}}</text></view>  
+      <button class="total_js" size="mini" bindtap='checkOrder'>去支付</button>  
+    </view>
+</view>

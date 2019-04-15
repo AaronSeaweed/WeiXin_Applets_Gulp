@@ -1,0 +1,32 @@
+@import '../../app.less';
+.background-color{background-color:#fff}
+page{background-color:#f7f7f7;}
+.deliveryInfo{
+    margin:20rpx auto;border-radius: 10px;.background-color;.boxsize(94%,auto);padding-top:1rpx;padding-bottom:1rpx;
+    view{width:95%;margin:13rpx auto}
+    .dateiladdress{
+        position: relative;
+        text{font-size:16px;font-weight:bold;width:90%;}
+        image{.boxsize(32rpx,32rpx);position: absolute;right: 0rpx;top:6rpx;}
+    }
+    text{display:block;font-size: 12px}
+
+}
+.seladdress{font-size:16px;.ordergoodlist{.boxsize(32rpx,32rpx);position: absolute;right: 40rpx;top:40rpx}}
+.Gotopay{
+    position:fixed;bottom:0;.boxsize(100%,60rpx);.background-color;line-height:60rpx;
+    .total_text{float:left;margin-left:20rpx;}
+    .total_js{float:right;background: #a3158e;border:0;border-radius:0;color:#fff;height:100%;line-height:60rpx;}
+}
+
+.priceDetail{
+    margin:20rpx auto;border-radius: 10px;.background-color;width:94%;
+    view{
+        border-bottom:1px #f7f7f7 solid;width:95%;margin:10rpx auto;padding-bottom:5px;position:relative;line-height:62rpx;
+        text{font-size: 14px}
+        text:last-of-type{right: 34rpx;position: absolute}
+        image{.boxsize(32rpx,32rpx);right: 0;position: absolute;top:18rpx;}
+    }
+    view:last-of-type{border-bottom:0px}
+    view:last-of-type text{position:initial!important;display:block;text-align:right;font-size:18px;color:#a3158e;}
+}

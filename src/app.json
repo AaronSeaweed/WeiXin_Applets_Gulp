@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/order/order",
+    "pages/order/orderDateil",
+    "pages/perCenter/perCenter",
+    "pages/shopcar/shopcar",
+    "pages/checkOrder/checkOrder",
+    "pages/checkOrder/goodslist",
+    "pages/setaddress/setAddress",
+    "pages/setaddress/modifyaddress",
+    "pages/setaddress/seladdress"
+  ],
+  "permission":{
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于地址搜索与展示"
+    }
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "老徐吃什么？",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "color":"#000000",
+    "selectedColor":"#a3158e",
+    "backgroundColor":"#fff",
+    "borderStyle":"white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车"
+      }
+    ]
+  }
+}
